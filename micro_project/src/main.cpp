@@ -5,17 +5,17 @@
 #include <Servo.h>
 //-------------------------------------
 // Constants related to the Application
-#define R1 1;
-#define R2 2;
-#define R3 3;
-#define R4 4;
-#define R5 5;
+#define R1 1
+#define R2 2
+#define R3 3
+#define R4 4
+#define R5 5
 #define NUM_RECIPES 5
 // Pins
-#define heaterPin 0;
-#define pipePin 1;
-#define bluetoothPin 2;
-#define bluetoothPin2 2;
+#define heaterPin 0
+#define pipePin 1
+#define bluetoothPin 2
+#define bluetoothPin2 2
 
 void recipe1();
 void recipe2();
@@ -54,11 +54,15 @@ void open_gate(int gate_number);
 void pump(int amountWater)
 {
   // control the relay to be high during droping time depends on the amount of water sent
+  digitalWrite(pipePin, HIGH);
+  delay(amountWater * 100);
+  digitalWrite(pipePin, LOW);
 }
 //-----------------------------
-// function opens heater if closed or close it if open
-void open_close_heater()
+// opens heater if closed or close it if open
+void inline open_close_heater()
 {
+  digitalWrite(heaterPin, !(digitalRead(heaterPin)));
 }
 //------------------------
 
@@ -83,7 +87,15 @@ void loop()
   // put your main code here, to run repeatedly:
 
   // Blocking Receive
-  receive(); // get data
+  // get data
+  receive();
+
+  /**
+   *  it will send the ID to the other arduino so that it starts its job too
+   *
+   * NOTE: we can use a pipe to sync the actions between the 2 arduinos
+   * 
+   */
 
   recipes_func[recipeID - 1](); // Call The corresponding recipe function
 }
