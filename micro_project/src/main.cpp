@@ -28,10 +28,13 @@ void receive()
 {
   // 1-read ID
   // 2-fill quantities
-  if (recipe == 1)
-  {
-    // for loop over the number of variables of this recipe
-  } // and so on
+  
+  
+  
+  // if (recipe == 1)
+  // {
+  //   // for loop over the number of variables of this recipe
+  // } // and so on
 }
 //------------------
 void rotate(int angle)
