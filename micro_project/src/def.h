@@ -35,5 +35,5 @@ void pump(int amountWater);
 void inline open_close_heater();
 
 // Variables taken from user
-char quantities[10];                                      // 10 is the max number of variables in all recipes it could be changed
+byte quantities[10];                                      // 10 is the max number of variables in all recipes it could be changed
 SoftwareSerial mybluetooth(bluetoothPin1, bluetoothPin2); // rx,tx
