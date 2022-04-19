@@ -38,13 +38,12 @@
 // {
 //   bool finishedReading = false;
 //   byte i = 0;
-//   char dataRead;
 
 //   while (!finishedReading)
 //   {
 //     while (mybluetooth.available() > 0)
 //     {
-//       dataRead = mybluetooth.read();
+//       char dataRead = mybluetooth.read();
 
 //       if (dataRead != endofLine)
 //       {
