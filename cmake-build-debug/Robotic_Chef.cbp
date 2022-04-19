@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Robotic_Chef"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Robotic_Chef">
+				<Option output="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Robotic_Chef.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/."/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples/Knob"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples/Sweep"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/avr"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/mbed"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/megaavr"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/nrf52"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/sam"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/samd"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/stm32f4"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/MotorKnob"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_oneRevolution"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_oneStepAtATime"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_speedControl"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/src"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/src"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 Robotic_Chef"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Robotic_Chef/fast">
+				<Option output="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Robotic_Chef.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/."/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples/Knob"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples/Sweep"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/avr"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/mbed"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/megaavr"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/nrf52"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/sam"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/samd"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/stm32f4"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/MotorKnob"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_oneRevolution"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_oneStepAtATime"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_speedControl"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/src"/>
+					<Add directory="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/src"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 Robotic_Chef/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/main.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples/Knob/Knob.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/examples/Sweep/Sweep.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/Servo.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/avr/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/avr/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/mbed/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/mbed/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/megaavr/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/megaavr/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/nrf52/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/nrf52/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/sam/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/sam/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/samd/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/samd/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/stm32f4/Servo.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Servo/src/stm32f4/ServoTimers.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/MotorKnob/MotorKnob.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_oneRevolution/stepper_oneRevolution.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_oneStepAtATime/stepper_oneStepAtATime.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/examples/stepper_speedControl/stepper_speedControl.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/src/Stepper.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/.pio/libdeps/uno/Stepper/src/Stepper.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/misc_c_files/testfunc.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/src/Task2.ino">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/src/def.h">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/src/main.cpp">
+			<Option target="Robotic_Chef"/>
+		</Unit>
+		<Unit filename="D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

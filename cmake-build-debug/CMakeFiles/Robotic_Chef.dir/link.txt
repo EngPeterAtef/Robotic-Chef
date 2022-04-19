@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Robotic_Chef.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\Robotic_Chef.dir/objects.a @CMakeFiles\Robotic_Chef.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Robotic_Chef.dir/objects.a -Wl,--no-whole-archive -o Robotic_Chef.exe -Wl,--out-implib,libRobotic_Chef.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Robotic_Chef.dir\linklibs.rsp

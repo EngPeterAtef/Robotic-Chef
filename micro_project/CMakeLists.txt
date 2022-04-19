@@ -1,51 +1,33 @@
-cmake_minimum_required(VERSION 3.20)
-project(micro_project)
+# !!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT AND USE
+# https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+#
+# If you need to override existing CMake configuration or add extra,
+# please create `CMakeListsUser.txt` in the root of project.
+# The `CMakeListsUser.txt` will not be overwritten by PlatformIO.
 
-set(CMAKE_CXX_STANDARD 14)
+cmake_minimum_required(VERSION 3.13)
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_C_COMPILER_WORKS 1)
+set(CMAKE_CXX_COMPILER_WORKS 1)
 
-include_directories(.pio/libdeps/uno/Servo/examples)
-include_directories(.pio/libdeps/uno/Servo/examples/Knob)
-include_directories(.pio/libdeps/uno/Servo/examples/Sweep)
-include_directories(.pio/libdeps/uno/Servo/src)
-include_directories(.pio/libdeps/uno/Servo/src/avr)
-include_directories(.pio/libdeps/uno/Servo/src/mbed)
-include_directories(.pio/libdeps/uno/Servo/src/megaavr)
-include_directories(.pio/libdeps/uno/Servo/src/nrf52)
-include_directories(.pio/libdeps/uno/Servo/src/sam)
-include_directories(.pio/libdeps/uno/Servo/src/samd)
-include_directories(.pio/libdeps/uno/Servo/src/stm32f4)
-include_directories(.pio/libdeps/uno/Stepper/examples)
-include_directories(.pio/libdeps/uno/Stepper/examples/MotorKnob)
-include_directories(.pio/libdeps/uno/Stepper/examples/stepper_oneRevolution)
-include_directories(.pio/libdeps/uno/Stepper/examples/stepper_oneStepAtATime)
-include_directories(.pio/libdeps/uno/Stepper/examples/stepper_speedControl)
-include_directories(.pio/libdeps/uno/Stepper/src)
-include_directories(src)
+project("untitled" C CXX)
 
-add_executable(micro_project
-        .pio/libdeps/uno/Servo/examples/Knob/Knob.ino
-        .pio/libdeps/uno/Servo/examples/Sweep/Sweep.ino
-        .pio/libdeps/uno/Servo/src/avr/Servo.cpp
-        .pio/libdeps/uno/Servo/src/avr/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/mbed/Servo.cpp
-        .pio/libdeps/uno/Servo/src/mbed/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/megaavr/Servo.cpp
-        .pio/libdeps/uno/Servo/src/megaavr/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/nrf52/Servo.cpp
-        .pio/libdeps/uno/Servo/src/nrf52/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/sam/Servo.cpp
-        .pio/libdeps/uno/Servo/src/sam/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/samd/Servo.cpp
-        .pio/libdeps/uno/Servo/src/samd/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/stm32f4/Servo.cpp
-        .pio/libdeps/uno/Servo/src/stm32f4/ServoTimers.h
-        .pio/libdeps/uno/Servo/src/Servo.h
-        .pio/libdeps/uno/Stepper/examples/MotorKnob/MotorKnob.ino
-        .pio/libdeps/uno/Stepper/examples/stepper_oneRevolution/stepper_oneRevolution.ino
-        .pio/libdeps/uno/Stepper/examples/stepper_oneStepAtATime/stepper_oneStepAtATime.ino
-        .pio/libdeps/uno/Stepper/examples/stepper_speedControl/stepper_speedControl.ino
-        .pio/libdeps/uno/Stepper/src/Stepper.cpp
-        .pio/libdeps/uno/Stepper/src/Stepper.h
-        misc_c_files/testfunc.cpp
-        src/main.cpp
-        src/Task2.ino)
+include(CMakeListsPrivate.txt)
+
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/CMakeListsUser.txt)
+    include(CMakeListsUser.txt)
+endif()
+
+add_custom_target(
+        Production ALL
+        COMMAND platformio -c clion run "$<$<NOT:$<CONFIG:All>>:-e${CMAKE_BUILD_TYPE}>"
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+add_custom_target(
+        Debug ALL
+        COMMAND platformio -c clion debug "$<$<NOT:$<CONFIG:All>>:-e${CMAKE_BUILD_TYPE}>"
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+add_executable(Z_DUMMY_TARGET ${SRC_LIST})

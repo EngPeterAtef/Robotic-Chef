@@ -1,0 +1,28 @@
+The target system is: Generic -  - 
+The host system is: Windows - 10.0.22000 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/MinGW/bin/mingw32-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/build/CMakeFiles/3.22.22022201-MSVC_2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/MinGW/bin/mingw32-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/micro_project/build/CMakeFiles/3.22.22022201-MSVC_2/CompilerIdCXX/a.exe"
+
