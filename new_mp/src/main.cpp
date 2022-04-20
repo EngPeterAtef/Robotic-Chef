@@ -2,16 +2,14 @@
 
 //------------------------
 
-void setup()
-{
+void setup() {
     // put your setup code here, to run once:
     Serial.begin(9600);
     Wire.begin(); // join i2c bus as a Master // i2c pins are connected to D15 and D16
     mybluetooth.begin(9600);
 }
 
-void loop()
-{
+void loop() {
 
     // Blocking Receive
     // recipeID is send by referece
@@ -33,24 +31,18 @@ void loop()
 }
 
 // Function to receive the recipeID from the user and depends on this id it will take number of specific variables
-void receive()
-{
+void receive() {
     bool finishedReading = false;
     byte i = 0;
 
-    while (!finishedReading)
-    {
-        while (mybluetooth.available() > 0)
-        {
+    while (!finishedReading) {
+        while (mybluetooth.available() > 0) {
             byte dataRead = mybluetooth.read();
 
-            if (dataRead != endOfLine)
-            {
+            if (dataRead != endOfLine) {
                 quantities[i] = dataRead;
                 i++;
-            }
-            else
-            {
+            } else {
                 finishedReading = true;
                 break; // wont break till all message has been read
             }
@@ -59,8 +51,7 @@ void receive()
 }
 
 // function pump that takes the quantity of required water
-void pump(int amountWater)
-{
+void pump(int amountWater) {
     // control the relay to be high during droping time depends on the amount of water sent
     digitalWrite(pipePin, HIGH);
     delay(amountWater * 100);
@@ -68,13 +59,11 @@ void pump(int amountWater)
 }
 
 // opens heater if closed or close it if open
-void inline open_close_heater()
-{
+void inline open_close_heater() {
     digitalWrite(heaterPin, !(digitalRead(heaterPin)));
 }
 
-void recipe1()
-{
+void recipe1() {
     // this function calls : open_gate() to move the stepper motor ,
     // pump() if water is needed(it's called at the begining),
     // open_close_heater() that takes the required time of heating

@@ -23,16 +23,25 @@
 #define endOfLine 's'
 
 void recipe1();
+
 void recipe2();
+
 void recipe3();
+
 void recipe4();
+
 void recipe5();
+
 void receive();
-void (*recipes_func[NUM_RECIPES])() = {&recipe1, &recipe2, &recipe3, &recipe4, &recipe5}; // Array of function pointer to each recipe
+
+void (*recipes_func[NUM_RECIPES])() = {&recipe1, &recipe2, &recipe3, &recipe4,
+                                       &recipe5}; // Array of function pointer to each recipe
 
 // Opens a Specific Gate
 void open_gate(int gate_number);
+
 void pump(int amountWater);
+
 void inline open_close_heater();
 
 // Variables taken from user

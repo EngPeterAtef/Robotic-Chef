@@ -4,57 +4,57 @@
 // https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
 //
 {
-    "configurations": [
-        {
-            "name": "PlatformIO",
-            "includePath": [
-                "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/include",
-                "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/src",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Stepper/src",
-                "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Servo/src",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/cores/arduino",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/variants/standard",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                ""
-            ],
-            "browse": {
-                "limitSymbolsToIncludedHeaders": true,
-                "path": [
-                    "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/include",
-                    "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/src",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                    "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Stepper/src",
-                    "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Servo/src",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/cores/arduino",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/variants/standard",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                    "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                    ""
-                ]
-            },
-            "defines": [
-                "PLATFORMIO=50205",
-                "ARDUINO_AVR_UNO",
-                "F_CPU=16000000L",
-                "ARDUINO_ARCH_AVR",
-                "ARDUINO=10808",
-                "__AVR_ATmega328P__",
-                ""
-            ],
-            "cStandard": "c11",
-            "cppStandard": "c++11",
-            "compilerPath": "C:/Users/aatta/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
-            "compilerArgs": [
-                "-mmcu=atmega328p",
-                ""
-            ]
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "PlatformIO",
+      "includePath": [
+        "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/include",
+        "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/src",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+        "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Stepper/src",
+        "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Servo/src",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/cores/arduino",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/variants/standard",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+        "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+        ""
+      ],
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "path": [
+          "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/include",
+          "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/src",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+          "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Stepper/src",
+          "d:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/new_mp/.pio/libdeps/uno/Servo/src",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/cores/arduino",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/variants/standard",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+          "C:/Users/aatta/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+          ""
+        ]
+      },
+      "defines": [
+        "PLATFORMIO=50205",
+        "ARDUINO_AVR_UNO",
+        "F_CPU=16000000L",
+        "ARDUINO_ARCH_AVR",
+        "ARDUINO=10808",
+        "__AVR_ATmega328P__",
+        ""
+      ],
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "compilerPath": "C:/Users/aatta/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+      "compilerArgs": [
+        "-mmcu=atmega328p",
+        ""
+      ]
+    }
+  ],
+  "version": 4
 }
