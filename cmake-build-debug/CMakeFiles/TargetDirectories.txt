@@ -1,3 +1,0 @@
-D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/CMakeFiles/Robotic_Chef.dir
-D:/Academic edu/Second Year CMP/Second sem/microprocessor/Project/Robotic-Chef/cmake-build-debug/CMakeFiles/rebuild_cache.dir
