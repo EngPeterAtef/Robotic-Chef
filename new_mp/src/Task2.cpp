@@ -5,7 +5,7 @@
 // byte quantities[10];
 //
 // // 1 2 3 's'
-// #define endofLine '\n'
+// #define endOfLine '\n'
 //
 // SoftwareSerial mybluetooth(10, 11); // rx,tx
 // void setup()
@@ -27,7 +27,7 @@
 //         {
 //             char dataRead = mybluetooth.read();
 //
-//             if (dataRead != endofLine)
+//             if (dataRead != endOfLine)
 //             {
 //                 quantities[i] = dataRead;
 //                 i++;

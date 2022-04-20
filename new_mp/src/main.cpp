@@ -44,7 +44,7 @@ void receive()
         {
             byte dataRead = mybluetooth.read();
 
-            if (dataRead != endofLine)
+            if (dataRead != endOfLine)
             {
                 quantities[i] = dataRead;
                 i++;

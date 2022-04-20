@@ -20,7 +20,7 @@
 #define bluetoothPin1 10
 #define bluetoothPin2 11
 
-#define endofLine 's'
+#define endOfLine 's'
 
 void recipe1();
 void recipe2();
