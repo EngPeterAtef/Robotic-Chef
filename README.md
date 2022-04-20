@@ -1,2 +1,9 @@
 # Robotic-Chef
-Robot have the ability to cook 5 different recipes 
+
+### Structure
+
+The project is found under the new_mp Folder
+
+- main files are _"main.cpp"_ and _"def.h"_
+- You Can open it using Clion or vscode whatever suitable
+- Add any individual ino files outside the directory of the Project
