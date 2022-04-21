@@ -8,6 +8,9 @@
 //-------------------------------------
 // Constants related to the Application
 #define NUM_RECIPES 5
+#define stepPerAngle 1.8
+#define endOfLine 's'
+
 #define R1 1
 #define R2 2
 #define R3 3
@@ -19,8 +22,12 @@
 #define pipePin 1
 #define bluetoothPin1 10
 #define bluetoothPin2 11
+#define direction_pin 8
+#define step_pin 9
+#define dc1_pin 13
+#define dc2_pin 12
+#define stepper_enable_pin 6
 
-#define endOfLine 's'
 
 void recipe1();
 
