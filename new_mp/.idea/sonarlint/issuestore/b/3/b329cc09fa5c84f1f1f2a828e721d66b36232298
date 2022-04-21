@@ -1,6 +1,0 @@
-
-Y	cpp:S5945%"=Use "std::array" or "std::vector" instead of a C-style array.(©­Éÿ8ª÷‚É„0
-=	cpp:S5421%"!Global variables should be const.(©­Éÿ8ª÷‚É„0
-S	cpp:S59450"2Use "std::string" instead of a C-style char array.(ŽØ—âýÿÿÿÿ8ª÷‚É„0
-B	cpp:S54210"!Global variables should be const.(ŽØ—âýÿÿÿÿ8ª÷‚É„0
-=	cpp:S54211"!Global variables should be const.(ƒÆòé8ª÷‚É„0
