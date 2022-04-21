@@ -46,4 +46,4 @@ void inline open_close_heater();
 
 // Variables taken from user
 byte quantities[10];                                      // 10 is the max number of variables in all recipes it could be changed
-const SoftwareSerial mybluetooth(bluetoothPin1, bluetoothPin2); // rx,tx
+SoftwareSerial mybluetooth(bluetoothPin1, bluetoothPin2); // rx,tx

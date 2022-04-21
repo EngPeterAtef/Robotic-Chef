@@ -28,6 +28,11 @@ void setup() {
 
 }
 
+/**
+ *
+ * @param gate_angle  angle of the gate we're heading to
+ * @param dc_delay  responsible for different types of ingredients, some require it small or big amount of time
+ */
 void open_gate(unsigned short gate_angle, unsigned short dc_delay = 8000) {
 
     //!NOTE: steps are just an integer anyway -> why Float
@@ -57,10 +62,12 @@ void open_gate(unsigned short gate_angle, unsigned short dc_delay = 8000) {
     delay(dc_delay);
     digitalWrite(dc1_pin, HIGH);
     digitalWrite(dc2_pin, LOW);
+
     delay(dc_delay);
+
     digitalWrite(dc1_pin, LOW);
     digitalWrite(dc2_pin, LOW);
-
+    //TODO: Consider that amount of time
     delay(2000);
 
     digitalWrite(direction_pin, LOW); // spin in the opposite direction
