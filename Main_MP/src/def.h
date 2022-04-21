@@ -38,7 +38,7 @@ void (*recipes_func[NUM_RECIPES])() = {&recipe1, &recipe2, &recipe3, &recipe4,
                                        &recipe5}; // Array of function pointer to each recipe
 
 // Opens a Specific Gate
-void open_gate(int gate_number);
+void open_gate(int gate_number, unsigned short dc_delay = 8000);
 
 void pump(int amountWater);
 
@@ -46,4 +46,4 @@ void inline open_close_heater();
 
 // Variables taken from user
 byte quantities[10];                                      // 10 is the max number of variables in all recipes it could be changed
-SoftwareSerial mybluetooth(bluetoothPin1, bluetoothPin2); // rx,tx
+const SoftwareSerial mybluetooth(bluetoothPin1, bluetoothPin2); // rx,tx

@@ -28,16 +28,15 @@ void setup() {
 
 }
 
-void rotate(unsigned short gate_angle, unsigned short dc_delay = 8000) {
+void open_gate(unsigned short gate_angle, unsigned short dc_delay = 8000) {
 
     //!NOTE: steps are just an integer anyway -> why Float
     //!NOTE: gate_angle can be a zero 3ady -- gate at the starting position
+
     digitalWrite(stepper_enable_pin, HIGH);
     Serial.println(gate_angle);
 
     auto steps = (short) (gate_angle / stepPerAngle);
-
-
     digitalWrite(direction_pin, HIGH);
     for (int i = 0; i < steps; i++) {
 
@@ -86,9 +85,9 @@ void loop() {
     }
 
     if (recipe == 1) {
-        rotate(90);
+        open_gate(90);
         delay(1000);
-        rotate(90);
+        open_gate(90);
         delay(1000);
     }
     delay(3000);
