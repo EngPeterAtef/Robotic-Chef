@@ -52,7 +52,7 @@ void (*recipes_func[NUM_RECIPES])() = {&recipe1, &recipe2, &recipe3, &recipe4,
                                        &recipe5}; // Array of function pointer to each recipe
 
 // Opens a Specific Gate
-void open_gate(unsigned short gate_angle, unsigned short dc_delay);
+void open_gate(unsigned short gate_angle, unsigned short for_how_long);
 
 void pump(int amountWater);
 

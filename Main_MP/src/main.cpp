@@ -71,9 +71,9 @@ void pump(int amountWater) {
 /**
  *
  * @param gate_angle  angle of the gate we're heading to
- * @param dc_delay  responsible for different types of ingredients, some require it small or big amount of time
+ * @param for_how_long  responsible for different types of ingredients, some require it small or big amount of time
  */
-void open_gate(unsigned short gate_angle, unsigned short dc_delay = 8000) {
+void open_gate(unsigned short gate_angle, unsigned short for_how_long = 8000) {
 
     //!NOTE: steps are just an integer anyway -> why Float
     //!NOTE: gate_angle can be a zero 3ady -- gate at the starting position
@@ -99,11 +99,11 @@ void open_gate(unsigned short gate_angle, unsigned short dc_delay = 8000) {
     //dc motor
     digitalWrite(dc1_pin, LOW);
     digitalWrite(dc2_pin, HIGH);
-    delay(dc_delay);
+    delay(for_how_long);
     digitalWrite(dc1_pin, HIGH);
     digitalWrite(dc2_pin, LOW);
 
-    delay(dc_delay);
+    delay(for_how_long);
 
     digitalWrite(dc1_pin, LOW);
     digitalWrite(dc2_pin, LOW);
@@ -129,6 +129,7 @@ void recipe1() {
     byte sugar_q = quantities[2];
 
     digitalWrite(heaterPin, HIGH);
+
     // we might need some repetitions for this
     //for fine ingredients like tea -> we should open and close the gate
     // multiple times
@@ -141,7 +142,10 @@ void recipe1() {
     delay(5000); // for the water to be sure it boiled
 
     digitalWrite(heaterPin, LOW);
-    pump(3); // TODO: NEED TO TEST THESE numbers in reality
+    // get the water out of the heater Now
+    // TODO: NEED TO TEST THESE numbers in reality
+    pump(3);
+
     Serial.println("\nta ta tea\n");
 }
 
