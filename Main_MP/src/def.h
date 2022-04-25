@@ -18,7 +18,7 @@
 #define R5 5
 
 // Pins
-#define heaterPin 0
+#define boiler_pin 0
 #define pumpPin 1
 #define bluetoothPin1 10
 #define bluetoothPin2 11
@@ -27,6 +27,7 @@
 #define dc1_pin 13
 #define dc2_pin 12
 #define stepper_enable_pin 6
+#define heater_pin 2
 
 // Gates ANGLE IN Degrees
 #define TEA_GATE 0
@@ -34,6 +35,10 @@
 #define PASTA_GATE 50
 #define SALT_GATE 75
 #define PEPPER_GATE 100
+#define PEAS_GATE 125
+#define CARROTS_GATE 150
+#define KOSA_GATE 175
+#define POPCORN_GATE 200
 //....
 
 void recipe1();

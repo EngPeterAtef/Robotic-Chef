@@ -14,7 +14,8 @@ void setup() {
     pinMode(dc2_pin, OUTPUT);
 
     pinMode(pumpPin, OUTPUT);
-    pinMode(heaterPin, OUTPUT);
+    pinMode(boiler_pin, OUTPUT);
+    pinMode(heater_pin,OUTPUT);
 
 }
 
@@ -128,7 +129,7 @@ void recipe1() {
     byte tea_q = quantities[1];
     byte sugar_q = quantities[2];
 
-    digitalWrite(heaterPin, HIGH);
+    digitalWrite(boiler_pin, HIGH);
 
     // we might need some repetitions for this
     //for fine ingredients like tea -> we should open and close the gate
@@ -141,7 +142,7 @@ void recipe1() {
 
     delay(5000); // for the water to be sure it boiled
 
-    digitalWrite(heaterPin, LOW);
+    digitalWrite(boiler_pin, LOW);
     // get the water out of the heater Now
     // TODO: NEED TO TEST THESE numbers in reality
     pump(3);
@@ -149,10 +150,89 @@ void recipe1() {
     Serial.println("\nta ta tea\n");
 }
 
-void recipe2() {}
+void recipe2() {
+    byte pasta_q = quantities[1];
+    byte salt_q = quantities[2];
+    byte pepper_q = quantities[3];
+    
+    digitalWrite(boiler_pin, HIGH);
 
-void recipe3() {}
+    delay(5000); //for the water to be sure it boiled
 
-void recipe4() {}
+    digitalWrite(boiler_pin, LOW);
+    // get the water out of the heater Now
+    // TODO: NEED TO TEST THESE numbers in reality
+    pump(6); 
+    digitalWrite(heater_pin,HIGH);
+    
+    open_gate(PASTA_GATE,2000*pasta_q);
+
+    delay(500000); //for the pasta to cook
+    digitalWrite(heater_pin, LOW); 
+
+    //drain pasta 
+    delay(5000); //to make sure that it got drained
+
+    for(byte i =0;i < salt_q; i++)
+    open_gate(SALT_GATE,2000);
+
+    for(byte i =0;i < pepper_q; i++)
+    open_gate(PEPPER_GATE,2000);
+
+    Serial.println("\nmacarona\n");
+}
+
+void recipe3() {
+   byte popcorn_q = quantities[1]; 
+   byte salt_q = quantities[2];
+
+   digitalWrite(heater_pin,HIGH);
+
+   open_gate(POPCORN_GATE,2000*popcorn_q);
+
+   delay(500000); //for popcorn to cook
+
+   digitalWrite(heater_pin, LOW);
+
+    delay(5000); //to get it ready
+
+   for(byte i =0;i < salt_q; i++)
+    open_gate(SALT_GATE,2000);
+
+    Serial.println("\npopcorn\n");
+}
+
+void recipe4() {
+    byte peas_q = quantities[1];
+    byte carrots_q = quantities[2];
+    byte kosa_q = quantities[3];
+    byte salt_q = quantities[4];
+    byte pepper_q = quantities[5];
+
+    digitalWrite(heater_pin,HIGH);
+    digitalWrite(boiler_pin, HIGH);
+
+    open_gate(PEAS_GATE,2000*peas_q);
+    open_gate(CARROTS_GATE,2000*carrots_q);
+    open_gate(KOSA_GATE,2000*kosa_q);
+
+    for(byte i =0;i < salt_q; i++)
+    open_gate(SALT_GATE,2000);
+
+    for(byte i =0;i < pepper_q; i++)
+    open_gate(PEPPER_GATE,2000);
+
+    delay(5000); // for the water to be sure it boiled
+
+    digitalWrite(boiler_pin, LOW);
+
+    pump(4);
+
+    delay(1200000); //20 min to cook
+
+    digitalWrite(heater_pin,LOW);
+
+    Serial.println("\nsaute\n");
+}
 
 void recipe5() {}
