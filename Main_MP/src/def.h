@@ -39,6 +39,7 @@
 #define CARROTS_GATE 150
 #define KOSA_GATE 175
 #define POPCORN_GATE 200
+#define CHICKEN_GATE 225
 //....
 
 void recipe1();

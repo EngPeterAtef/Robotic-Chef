@@ -235,4 +235,41 @@ void recipe4() {
     Serial.println("\nsaute\n");
 }
 
-void recipe5() {}
+void recipe5() {
+    byte peas_q = quantities[1];
+    byte carrots_q = quantities[2];
+    byte kosa_q = quantities[3];
+    byte salt_q = quantities[4];
+    byte pepper_q = quantities[5];
+    byte chicken_q = quantities[6];
+
+    digitalWrite(heater_pin,HIGH);
+    
+
+    open_gate(CHICKEN_GATE,2000*chicken_q);
+    delay(5000);
+
+    open_gate(PEAS_GATE,2000*peas_q);
+    open_gate(CARROTS_GATE,2000*carrots_q);
+    open_gate(KOSA_GATE,2000*kosa_q);
+
+    for(byte i =0;i < salt_q; i++)
+    open_gate(SALT_GATE,2000);
+
+    for(byte i =0;i < pepper_q; i++)
+    open_gate(PEPPER_GATE,2000);
+    delay(5000);
+
+    digitalWrite(boiler_pin, HIGH);
+    delay(5000); // for the water to be sure it boiled
+
+    digitalWrite(boiler_pin, LOW);
+
+    pump(4);
+
+    delay(1200000); //20 min to cook
+
+    digitalWrite(heater_pin,LOW);
+
+    Serial.println("\nshawrma bl khodar\n");
+}
