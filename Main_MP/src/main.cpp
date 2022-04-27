@@ -236,40 +236,30 @@ void recipe4() {
 }
 
 void recipe5() {
-    byte peas_q = quantities[1];
-    byte carrots_q = quantities[2];
-    byte kosa_q = quantities[3];
-    byte salt_q = quantities[4];
-    byte pepper_q = quantities[5];
-    byte chicken_q = quantities[6];
+    byte onion_q = quantities[1];
+    byte salt_q = quantities[2];
+    byte pepper_q = quantities[3];
+    byte chicken_q = quantities[4];
+    byte bellpepper_q = quantities[5];
 
     digitalWrite(heater_pin,HIGH);
     
-
-    open_gate(CHICKEN_GATE,2000*chicken_q);
-    delay(5000);
-
-    open_gate(PEAS_GATE,2000*peas_q);
-    open_gate(CARROTS_GATE,2000*carrots_q);
-    open_gate(KOSA_GATE,2000*kosa_q);
+    open_gate(ONION_GATE,2000*onion_q);
 
     for(byte i =0;i < salt_q; i++)
     open_gate(SALT_GATE,2000);
 
     for(byte i =0;i < pepper_q; i++)
     open_gate(PEPPER_GATE,2000);
-    delay(5000);
+    delay(180000);
 
-    digitalWrite(boiler_pin, HIGH);
-    delay(5000); // for the water to be sure it boiled
+    open_gate(CHICKEN_GATE,2000*chicken_q);
+    delay(300000);
 
-    digitalWrite(boiler_pin, LOW);
-
-    pump(4);
-
-    delay(1200000); //20 min to cook
+    open_gate(BELLPEPPER_GATE,2000*bellpepper_q);
+    delay(6000); 
 
     digitalWrite(heater_pin,LOW);
 
-    Serial.println("\nshawrma bl khodar\n");
+    Serial.println("\nshawrma\n");
 }

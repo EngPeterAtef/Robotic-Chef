@@ -40,6 +40,8 @@
 #define KOSA_GATE 175
 #define POPCORN_GATE 200
 #define CHICKEN_GATE 225
+#define ONION_GATE 250
+#define BELLPEPPER_GATE 275
 //....
 
 void recipe1();
